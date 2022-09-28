@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Alfahelix</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!-- Folha de estilo propria -->
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <link href="img/favicon.png" rel="icon">
+
+</head>
+
+<body>
+    <!-- Inicio menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed top">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="img/new_logo.svg" height="60"></a>
+            
+            <!-- Menu sanduíche -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- menu principal -->
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link">Login</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fim menu -->
+
+    <!-- Inicio header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!-- Texto -->
+                <div class="col-lg-5 col-12 text-light jumbotron bg-transparent">
+                    <span class="btn btn-success btn-sm">À partir de R$19,99</span>
+                    <h1>Cursos de alta qualidade e custo baixo</h1>
+                    <p class="text-dark">Somos uma escola de computação com profissionais altamente qualificados. Promovemos cursos rápidos, práticos e de alta qualidade. Nossos profissionais possuem graduação, mestrado ou doutorado.</p>
+                    <a href="#course" class="btn btn-dark btn-lg">Conheça nossos cursos</a>
+                </div>
+
+                <!-- Carrosel -->
+                <div class="col-lg-7 col-12">
+                    <div id="img-home" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#img-home" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#img-home" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#img-home" data-bs-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <!-- Imagem 01 -->
+                            <div class="carousel-item active">
+                                <img class="img-fuid" src="img/01.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">Seleção de cursos por R$26,99</h5>
+                                    <a class="text-light" href="course">PHP | Python | MySQL</a>
+                                </div>
+                            </div>
+                            <!-- Imagem 02 -->
+                            <div class="carousel-item">
+                                <img class="img-fuid" src="img/02.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">O melhor da Alfa</h5>
+                                    <a class="text-light" href="course">CodeIgniter: Criando Websites Profissionais com PHP</a>
+                                </div>
+                            </div>
+                            <!-- Imagem 03 -->
+                            <div class="carousel-item">
+                                <img class="img-fuid" src="img/03.png">
+                                <div class="carousel-caption">
+                                    <h5 class="text-dark">O barato do dia por R$19,99</h5>
+                                    <a class="text-light" href="course">Todo dia um curso diferente com um precinho irresistível</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#img-home" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#img-home" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <!-- Fim header -->
+
+    <!-- Inicio cursos -->
+    <div id="course" class="container">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">Gratuito</div>
+                <div class="card">
+                    <img src="img/visualizacao_python_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science: Visualização de Dados
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <p style="font-size: 10px; color:#AAA"><i class="fas fa-play-circle"></i> 24 aulas | <i class="fas fa-clock"></i> 1 hora | <i class="fas fa-sitemap"></i> Intermediário</p>
+                            <p>Aprenda a construir visualizações de dados usando a linguagem de programação Python</p>
+                            <a href="https://www.udemy.com/course/visualizacao-de-dados-com-python/" class="btn btn-outline-info">Matricule-se grátis</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim card 1 -->
+
+             <!-- Card 2 -->
+             <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">Gratuito</div>
+                <div class="card">
+                    <img src="img/jquery_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Introdução ao framework jQuery
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <p style="font-size: 10px; color:#AAA"><i class="fas fa-play-circle"></i> 15 aulas | <i class="fas fa-clock"></i> 2 hora | <i class="fas fa-sitemap"></i> Iniciante</p>
+                            <p>Construa suas primeiras aplicações web usando JavaScript e o framework jQuery</p>
+                            <a href="#" class="btn btn-outline-info">Matricule-se grátis</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim card 2 -->
+
+             <!-- Card 3 -->
+             <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">Gratuito</div>
+                <div class="card">
+                    <img src="img/php_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Introdução à Criação de Sites com PHP
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half text-warning"></i>
+                            <p style="font-size: 10px; color:#AAA"><i class="fas fa-play-circle"></i> 17 aulas | <i class="fas fa-clock"></i> 1,5 hora | <i class="fas fa-sitemap"></i> Iniciante</p>
+                            <p>Aprenda a linguagem de programação PHP e comece a construir seus primeiros sites dinâmicos</p>
+                            <a href="#" class="btn btn-outline-info">Matricule-se grátis</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim card 3 -->
+
+             <!-- Card 4 -->
+             <div class="col-lg-3 col-md-6 col-12">
+                <div class="btn btn-info">Gratuito</div>
+                <div class="card">
+                    <img src="img/css_min.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Introdução à linguagem <br> CSS
+                            <br>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half text-warning"></i>
+                            <p style="font-size: 10px; color:#AAA"><i class="fas fa-play-circle"></i> 20 aulas | <i class="fas fa-clock"></i> 1,5 hora | <i class="fas fa-sitemap"></i> Iniciante</p>
+                            <p>Aprenda os conceitos básicos da linguagem de estilos CSS e construa páginas mais elegantes</p>
+                            <a href="#" class="btn btn-outline-info">Matricule-se grátis</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim card 4 -->
+        </div>
+    </div>
+    <!-- Fim cursos -->
+
+    <!-- Rodapé -->
+    <footer class="text-light text-center bg-dark">
+        <p>Desenvolvido por <a href="https://github.com/brunoleo10" target="_blank" rel="external">Bruno Nogueira</a></p>
+
+    </footer>
+    <!-- Fim rodapé -->
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    
+    
+</body>
+
+
+</html>
